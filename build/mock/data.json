@@ -9,8 +9,8 @@
         "isLike": true
     },
     {
-        "image": "../source/song_2.jpg",
-        "audio": "../source/song_2.mp3",
+        "image": "./../source/song_2.jpg",
+        "audio": "./../source/song_2.mp3",
         "song": "小半",
         "album": "小梦大半",
         "singer": "陈粒",
