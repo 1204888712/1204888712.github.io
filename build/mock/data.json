@@ -1,7 +1,7 @@
 [
     {
-        "image": "../source/song_1.jpg",
-        "audio": "../source/song_1.mp3",
+        "image": "/build/source/song_1.jpg",
+        "audio": "/build/source/song_1.mp3",
         "song": "丑八怪",
         "album": "意外",
         "singer": "薛之谦",
