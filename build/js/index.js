@@ -129,4 +129,4 @@ function getData(url) {
    
 }
 
-getData("../mock/data.json")
+getData("./../mock/data.json")
