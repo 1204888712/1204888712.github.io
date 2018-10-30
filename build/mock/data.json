@@ -9,8 +9,8 @@
         "isLike": true
     },
     {
-        "image": "./../source/song_2.jpg",
-        "audio": "./../source/song_2.mp3",
+        "image": "/build/source/song_2.jpg",
+        "audio": "/build/source/song_2.mp3",
         "song": "小半",
         "album": "小梦大半",
         "singer": "陈粒",
@@ -18,8 +18,8 @@
         "isLike": false
     },
     {
-        "image": "../source/song_3.jpg",
-        "audio": "../source/song_3.mp3",
+        "image": "/build/source/song_3.jpg",
+        "audio": "/build/source/song_3.mp3",
         "song": "Shape of You",
         "album": "÷",
         "singer": "ed sheeran",
