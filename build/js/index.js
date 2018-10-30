@@ -128,4 +128,4 @@ function getData(url) {
     })
    
 }
-getData("../mock/data.json")
+getData("/build/mock/data.json")
