@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        .div2{
+            width: 100px;
+            /* height: 100px; */
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        /* .box{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .box .main{
+            float: left;
+            width: 100%;
+            height: 100%;
+            background: yellow;
+        }
+        .box .l{
+            float: left;
+            width: 200px;
+            height: 100%;
+            margin-left: -100%;
+            background:rebeccapurple;
+
+        }*/
+        .box .r{
+            float: left;
+            width: 200px;
+            height: 100%;
+            margin-left: -200px;;
+            background:violet;
+        }
+        .content{
+            background: yellow;
+            margin:0 200px;
+        } 
+        .test{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        @media screen and (min-width:500px) and (max-width:1000px){
+            .test{
+                width: 100px;
+                height: 100px;
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="div1"></div> -->
+    <div class="div2"></div>
+    <!-- <div class="box">
+        <div class="main"><div class="content"></div></div>
+        <div class="l"></div>
+        <div class="r"></div>
+    </div> -->
+    <div class="test"></div>
+    <script>
+     function clone(obj){
+         var o;
+         if(typeof obj != "object"){
+             return obj;
+         }else{
+             if(obj==null){
+                 return null;
+             }else if(obj instanceof Array){
+                 o = [];
+             }else if(obj instanceof Object){
+                 o = {};
+             }
+             for(var item in obj){
+                 o[item] = clone(obj[item]);
+             }
+         }
+         return o;
+     }
+    var a = [12,3,3,4,4,5]
+    a.reverse()
+     a.sort(function(a,b){
+         return b-a;
+     })
+     function test(begin,end,step=1){
+         var count = 0;
+         var output = [];
+         step = step<1?1:step;
+         if(arguments.length == 1){
+             end = begin;
+             begin = 0;
+         }
+         for(var i =begin ; i<end; i ++){
+             if(i== begin + count*step){
+                output.push(i);
+                count ++;
+             }
+         }
+         return output;
+     }
+     var name = "ppp";
+     (function(){
+         if(typeof name === "undefined"){
+             console.log(1)
+         }else{
+            console.log(2)
+         }
+     })()
+        
+     
+     </script>
+</body>
+</html>
